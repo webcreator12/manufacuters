@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #fff;
+}
+nav{
+    height: 20vh;
+    padding: 30px 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 1290px;
+    margin: 0 auto;
+}
+nav .container{
+    align-items: center;
+}
+nav img{
+    height: 80px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #747474;
+}
+nav li i{
+    margin-left: 10px;
+}
+nav a{
+    color: #000;
+    text-decoration-thickness: 2px;
+}
+nav a i{
+    margin-left: 20px;
+    color: #747474;
+}
+nav #icon{
+    display: none;
+}
+header{
+    padding: 40px 0;
+}
+header .left h1{
+    padding-top: 40px;
+    font-size: 3.8vw;
+    text-transform: uppercase;
+    width: 505px;
+}
+header .left h1 span{
+    color: #f69f47;
+}
+header .left p{
+    font-size: 20px;
+    width: 400px;
+    color: #747474;
+    padding: 20px 0;
+}
+header button{
+    background-color: #f69f47;
+    color: #000;
+    border: 0;
+    padding: 10px 15px;
+}
+header button i{
+    margin-left: 20px;
+}
+@media only screen and (max-width:1364px) and (min-width:1200px){
+    .container{
+        width: 1150px;
+    }
+}
+@media only screen and (max-width:1200px) and (min-width:1000px){
+    .container{
+        width: 900px;
+    }
+    header .left{
+        padding-top:80px;
+    }
+    header .left h1{
+        width:400px;
+    }
+    header img{
+        width: 500px;
+        height: 480px;
+    }
+}
+@media only screen and (max-width:1000px) and (min-width:800px){
+    .container{
+        width: 780px;
+    }
+    header .container{
+        flex-direction: column;
+    }
+    header .left{
+        order: 1;
+    }
+    header .left h1, header .left p{
+        width: 100%;
+    }
+    header .right img{
+        width:100%;
+    }
+}
+@media only screen and (max-width:800px) and (min-width:500px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    nav{
+        padding: 10px 0;
+    }
+    nav .container{
+        align-items: flex-start;
+    }
+    nav img{
+        padding: 0 20px;
+    }
+    nav ul , #phone{
+        display: none;
+    }
+    nav #icon{
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: 30px;
+        font-size: 22px;
+    }
+    header .right{
+        order: -1;
+        margin-top: -80px;
+    }
+    header img{
+        width: 100%;
+    }
+    header .left h1{
+        width: 100%;
+        font-size: 30px;
+    }
+}
